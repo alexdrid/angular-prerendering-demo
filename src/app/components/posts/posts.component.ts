@@ -23,6 +23,7 @@ export class PostsComponent implements OnInit {
 
   ngOnInit(): void {
     this.postService.getPosts().subscribe((data) => {
+      console.log("PostsComponent - this.postService.getPosts - data:", data)
       this.posts.set(data);
     });
   }

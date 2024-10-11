@@ -1,10 +1,12 @@
-@let posts = postList();
+<div class="container mx-auto my-5 max-h-[500px] overflow-y-auto">
+    @let posts = postList();
 
-@for(post of posts; track post.id) {
-    <div>
-        <h3 style="margin-bottom: 0;">{{post.title}}</h3>
-        <small>Author {{post.user}}</small>
-        <hr>
-        <p>{{post.body}}</p>
-    </div>
-}
+    @for(post of posts; track post.id) {
+        <div>
+            <h3 style="margin-bottom: 0;">{{post.title}}</h3>
+            <small>Author {{post.user}}</small>
+            <hr>
+            <p>{{post.body}}</p>
+        </div>
+    }
+</div>
