@@ -1,0 +1,10 @@
+@let posts = postList();
+
+@for(post of posts; track post.id) {
+    <div>
+        <h3 style="margin-bottom: 0;">{{post.title}}</h3>
+        <small>Author {{post.user}}</small>
+        <hr>
+        <p>{{post.body}}</p>
+    </div>
+}
